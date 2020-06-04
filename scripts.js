@@ -146,7 +146,9 @@
     }
 
     checkForMatch() {
-      let isMatch = this.firstCard.dataset.card === this.secondCard.dataset.card;    
+      let isMatch = this.firstCard.dataset.card === this.secondCard.dataset.card;
+      isMatch ? this.disableCards() : this.unflipCards();
+          
     }
 
     
@@ -164,5 +166,6 @@
 
  
   
-  
-  
+    // let isMatch = firstCard.dataset.card === secondCard.dataset.card;
+    //    isMatch ? disableCards() : unflipCards();
+    
